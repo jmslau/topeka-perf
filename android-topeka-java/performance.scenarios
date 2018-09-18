@@ -1,0 +1,9 @@
+clean_build {
+	tasks = ["assembleDebug"]
+	cleanup-tasks = ["clean"]
+}
+
+incremental_build {
+	tasks = ["assembleDebug"]
+	apply-non-abi-change-to = "app/src/main/java/com/google/samples/apps/topeka/model/Avatar.java"
+}

@@ -19,7 +19,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    buildToolsVersion "27.0.3"
+    buildToolsVersion '28.0.2'
     compileSdkVersion 27
 
     dataBinding {
@@ -61,7 +61,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
     implementation "com.android.support.test.espresso:espresso-idling-resource:${espressoVersion}"
     testImplementation "junit:junit:${junitVersion}"
-    kapt 'androidx.databinding:databinding-compiler:3.2.0-beta05'
+    kapt 'androidx.databinding:databinding-compiler:3.2.0-rc02'
 
     androidTestImplementation("com.android.support.test.espresso:espresso-core:${espressoVersion}") {
         exclude module: "espresso-idling-resource"
