@@ -4,7 +4,7 @@ This project is a fork of [Topeka](https://github.com/googlesamples/android-tope
 
 ## Project and Methodology
 * Started with the Java version of Topeka [here](https://github.com/googlesamples/android-topeka/tree/java).
-* Updated to use Android Gradle plugin com.android.tools.build:gradle:3.2.0-rc02
+* Updated to use Android Gradle plugin com.android.tools.build:gradle:3.2.0-rc03. Make sure you also update the databinding version to match.
 * For Kotlin version, I configured the project with Kotlin 1.2.60, then used Java to Kotlin converter to convert all the Java files. Fix up all the build errors just so it builds :)
 * For each project, use the [Gradle Profiler](https://github.com/gradle/gradle-profiler) to run benchmark.
   For example,
