@@ -9,7 +9,7 @@ This project is a fork of [Topeka](https://github.com/googlesamples/android-tope
 * For each project, use the [Gradle Profiler](https://github.com/gradle/gradle-profiler) to run benchmark.
   For example,
   
-    ```> gradle-profiler --benchmark --project-dir --scenario-file performance.scenarios incremental_build --output-dir ./profile-out-incremental_build```
+    ```> gradle-profiler --benchmark --project-dir . --scenario-file performance.scenarios incremental_build --output-dir ./profile-out-incremental_build```
     
     There is a ```performance.scenarios``` file in topeka-java and topeka-kotlin folders. Each ```performance.scenario``` file contains 2 scenarios: a clean build and an incremental build.
 
