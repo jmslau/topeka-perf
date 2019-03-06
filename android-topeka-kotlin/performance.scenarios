@@ -5,5 +5,17 @@ clean_build {
 
 incremental_build {
 	tasks = ["assembleDebug"]
-	apply-non-abi-change-to = "app/src/main/java/com/google/samples/apps/topeka/model/Avatar.kt"
+	apply-non-abi-change-to = "app/src/main/java/com/google/samples/apps/topeka/activity/QuizActivity.kt"
+}
+
+kapt_clean {
+        tasks = ["assembleDebug"]
+        cleanup-tasks=["clean"]
+        gradle-args = ["-Pkapt.use.worker.api=true", "-Pkapt.incremental.apt=true", "-Pandroid.databinding.incremental=true"]
+}
+
+kapt_incremental_build {
+        tasks = ["assembleDebug"]
+        apply-non-abi-change-to = "app/src/main/java/com/google/samples/apps/topeka/activity/QuizActivity.kt"
+        gradle-args = ["-Pkapt.use.worker.api=true", "-Pkapt.incremental.apt=true", "-Pandroid.databinding.incremental=true"]
 }
